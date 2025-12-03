@@ -1,0 +1,40 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+    animation: fundoTroca 6s ease-in-out forwards;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Imagem inicial */
+.tema {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Fundo troca entre azul e rosa */
+@keyframes fundoTroca {
+    0%   { background-color: #f48ca0; }
+    16%  { background-color: #0097b2; }
+    33%  { background-color: #f48ca0; }
+    50%  { background-color: #0097b2; }
+    66%  { background-color: #f48ca0; }
+    83%  { background-color: #0097b2; }
+    100% { background-color: #f4f4f4; }
+}

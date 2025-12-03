@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* fundo igual da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Logo ("by Diva do Code") */
+.logo {
+    width: 450px;
+    display: block;
+    margin: 5px auto 80px auto; /* igual à referência */
+}
+
+/* Título ("Professora cansada") */
+.titulo {
+    width: 500px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Texto dos campos */
+.input-label {
+    font-size: 22px;
+    color: #f48ca0;
+    margin-bottom: 5px;
+}
+
+/* Input */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0097b2;
+    color: #f4f4f4;
+    font-size: 15px;
+    text-align: center;
+}
+
+.input-box input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.input-box input:focus {
+    outline: none;      /* remove o contorno padrão */
+    box-shadow: none;   /* garante que não apareça nenhuma sombra */
+}
+
+/* Botão entrar */
+.botao-entrar {
+    display: inline-block;
+    background-color: #f48ca0;
+    color: #f4f4f4;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.miolo {
+    /* valor negativo sobe o bloco */
+    transform: translateY(-60px);  /* ajuste o número conforme quiser */
+}
+
+
+/* Frase final */
+.frase-final {
+    width: 700px;
+    display: block;
+    margin: 20px auto 0 auto;
+}

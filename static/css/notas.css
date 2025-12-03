@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.logo {
+    width: 450px;
+    display: block;
+    margin: 5px auto 60px auto;
+}
+
+.titulo {
+    width: 400px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.miolo {
+    transform: translateY(-40px); /* se quiser subir um pouco o miolo */
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    font-size: 20px;
+    color: #f39cb6;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0097b2;
+    color: #f4f4f4;
+    font-size: 16px;
+    text-align: center;
+}
+
+.campo input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* Botão salvar */
+.botao-salvar {
+    background-color: #f48ca0;
+    color: #f4f4f4;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    box-shadow: none; /* remove a borda preta padrão */
+}
+
+
+
+

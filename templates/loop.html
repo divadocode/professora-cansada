@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loop.css') }}">
+    <title>Professora Cansada - Continuar?</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Formulário envia via POST para a rota /loop -->
+        <form method="POST" action="{{ url_for('loop') }}">
+            <!-- Logo -->
+            <img src="{{ url_for('static', filename='img/diva.png') }}" alt="By Diva do Code" class="logo">
+
+            <div class="miolo">
+                <!-- Título -->
+                <img src="{{ url_for('static', filename='img/tema3.png') }}" alt="Continuar?" class="titulo">
+
+                <!-- Opções lado a lado -->
+                <div class="linha-opcoes">
+                    <button type="submit" name="escolha" value="sim" class="opcao">Sim</button>
+                    <span class="ou">ou</span>
+                    <button type="submit" name="escolha" value="nao" class="opcao">Não</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

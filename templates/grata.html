@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grata.css') }}">
+    <title>Professora Cansada - Agradecimento</title>
+    <script>
+        // Depois de 6s (quando a animação do fundo termina), troca a imagem
+        setTimeout(() => {
+            document.getElementById("tema-img").src = "{{ url_for('static', filename='img/tema9.png') }}";
+        }, 6000);
+
+        // Depois de 8s, tenta fechar a janela
+        setTimeout(() => {
+            window.close(); 
+        }, 8000);
+    </script>
+</head>
+<body>
+    <main class="container">
+        <!-- Começa já mostrando a primeira imagem -->
+        <img src="{{ url_for('static', filename='img/tema6.png') }}" alt="Agradecimento" class="tema" id="tema-img">
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+    <title>Professora Cansada - Abertura</title>
+    <script>
+        // Depois de 6s troca a imagem
+        setTimeout(() => {
+            document.getElementById("tema-img").src = "{{ url_for('static', filename='img/tema.png') }}";
+        }, 6000);
+
+        // Depois de 8s redireciona para login
+        setTimeout(() => {
+            window.location.href = "/login";
+        }, 8000);
+    </script>
+</head>
+<body>
+    <main class="container">
+        <!-- Começa já mostrando a primeira imagem -->
+        <img src="{{ url_for('static', filename='img/tema0.png') }}" 
+             alt="Tema Inicial" 
+             class="tema" 
+             id="tema-img">
+    </main>
+</body>
+</html>
+
+
+
+
