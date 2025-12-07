@@ -2,7 +2,7 @@
 
 ---
 
-Aplicação web criada para ajudar professoras a lançar notas de forma rápida, simples e sem complicação.
+Aplicação web criada para ajudar professores a lançar notas de forma rápida, simples e sem complicação.
 Interface direta, lógica clara e funcionamento suave mesmo no modo dry run (simulação segura).
 
 O objetivo é mostrar como um sistema pensado para pessoas leigas pode ser organizado, seguro e intuitivo.
